@@ -1,5 +1,3 @@
-# Front-end Style Guide
-
 ## Layout
 
 The designs were created to the following widths:
@@ -26,13 +24,6 @@ The designs were created to the following widths:
 - Grayish Blue (Text): hsl(225, 20%, 60%)
 - Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%)
 
-## Typography
-
 ### Body Copy
 
 - Font size (Introductory Paragraph): 15px
-
-### Font
-
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 600, 800

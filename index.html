@@ -1,9 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta charset="utf-8" />
+    <!--The HTML5 specification encourages web developers to use the UTF-8 character
+    set, which covers almost all of the characters and symbols in the world!-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--This tag tell Microsoft Internet Explorer to uso the latest rendering engine (edge)-->
+
+    <title>Interactive pricing component</title>
+    <!--The tag defines the title of the document. The title must be text-only, and it is shown 
+    in the browser's title bar or in the page's tab. The contents of a page title is very 
+    important for search engine optimization (SEO)! The page title is used by search engine algorithms 
+    to decide the order when listing pages in search results.
+
+    Here are some tips for creating good titles:
+
+    Go for a longer, descriptive title (avoid one- or two-word titles)
+    Search engines will display about 50-60 characters of the title, so try not to have titles longer than that
+    Do not use just a list of words as the title (this may reduce the page's position in search results)-->
 
     <link
       rel="icon"
@@ -11,57 +27,70 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!--Link to the favicon-->
 
-    <title>Interactive pricing component</title>
+    <meta name="description" content="This is a HTML template" />
+    <!--Drescription of the website-->
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="author" content="Victor Bicego Quintaneira" />
+    <!--Author of the website-->
 
-    <!-- Fontawesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--This gives the browser instructions on how to control the page's dimensions and scaling.
+      The width=device-width part sets the width of the page to follow the screen-width of the device
+      (which will vary depending on the device).
+      The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+
     <script
       src="https://kit.fontawesome.com/668fcd700e.js"
       crossorigin="anonymous"
     ></script>
+    <!-- If you want to use fontawesome -->
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <!-- If you wnat to use Google Fonts -->
 
-    <!-- CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--If you want to use jQuery-->
+
     <link rel="stylesheet" href="styles.css" />
+    <!--Link to the CSS archiv-->
   </head>
+
   <body>
     <div class="top">
       <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
+      <p>Sign-up for our 30-day trial. No credit card require.</p>
     </div>
 
     <div class="middle">
-      <h2>100k Pageviews</h2>
-      <p>Monthly Billing</p>
-      <div><a href=""></a></div>
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-      <p>Yearly Billing <span class="discount">25% discount</span></p>
+      <p>100K PAGEVIEWS</p>
+      <p><span class="value"></span>/ month</p>
+      <input type="range" min="1.00" max="25.00" value="18.00" class="range" />
+      <div class="middle-bottom">
+        <p>Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider rounded"></span>
+        </label>
+        <p>Yearly Billing <span class="discount">25% discount</span></p>
+      </div>
     </div>
 
     <div class="bottom">
-      <p><i class="fas fa-check"></i>Unlimited websites</p>
-      <p><i class="fas fa-check"></i>100% data ownership</p>
-      <p><i class="fas fa-check"></i>Email reports</p>
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
       <button>Start my trial</button>
     </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Victor Bicego Quintaneira</a>.
-    </div>
+    <script src="script.js" async defer></script>
+    <!--Link to the JavaScript archiv-->
   </body>
 </html>
